@@ -76,13 +76,6 @@ module.exports = (function makeWebpackConfig() {
         ]
     };
 
-    config.postcss = [
-        autoprefixer({
-            browsers: ['last 2 versions']
-        })
-    ];
-
-
     config.plugins = [
         new CommonsChunkPlugin({
             names: ['vendor'],

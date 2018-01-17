@@ -6,7 +6,7 @@
     "url": "https://github.com/evan-carey/angular-typescript-webpack.git"
   },
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile --NODE_ENV=production",
+    "build": "rimraf dist && NODE_ENV=production webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --hot --progress --NODE_ENV=dev",
     "start": "npm run server"
   },
@@ -34,7 +34,7 @@
     "sass-loader": "4.0.2",
     "style-loader": "0.13.1",
     "typescript": "2.0.3",
-    "webpack": "1.13.2",
+    "webpack": "2.6.1",
     "webpack-dev-server": "1.15.1",
     "webpack-stream": "3.2.0"
   },
